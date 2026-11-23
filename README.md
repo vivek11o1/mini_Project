@@ -107,6 +107,9 @@ docker run -p 8000:8000 news-classifier
 # Swagger UI: http://localhost:8000/docs
 ```
 
+The container reads the `PORT` environment variable (Render injects `PORT=10000` by default)
+and falls back to `8000` for local Docker runs. It binds to `0.0.0.0`, which Render requires.
+
 ## Notes
 
 - `scraper.py` collects unlabeled headlines into `scraped_articles.csv`. Add a `Topic`
