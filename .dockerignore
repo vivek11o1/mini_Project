@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.pkl
+scraped_articles.csv
